@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>           
+        <picture class="banner">
+            <source media="(max-width: 550px)" srcset="imagens/banner-p.jpg" type="image/jpg">
+            <img src="imagens/banner-g.jpg" alt="Banner do site Dancox Games">
+        </picture>
+    </header>
     
-    <picture class="banner">
-        <source media="(max-width: 550px)" srcset="imagens/banner-p.jpg" type="image/jpg">
-        <img src="imagens/banner-g.jpg" alt="Banner do site Dancox Games">
-    </picture>
     <nav class="menu"> 
         <p>Dancox Games</p>
         <a href="#">Playstation</a>
@@ -20,8 +22,9 @@
         <a href="#">Nintendo</a>
         <a href="#">Steam</a>
     </nav>
+    
     <main>
-        <section>
+        <section  class="playstation">
             <picture>
                 <source media="(max-width: 550px)" srcset="imagens/psplus-p.jpg" type="image/jpg">
                 <img src="imagens/psplus-g.jpg" alt="PS Plus de maio de 2025">
@@ -29,7 +32,8 @@
             <h1>Playstation Plus de maio de 2025</h1>
             <p>Resgate agora os jogos da PS Plus de Maio: ARK: Survival Ascended, Balatro e Warhammer 40.000: Boltgun</p>
         </section>
-        <section>
+
+        <section  class="nintendo">
             <picture>
                 <source media="(max-width: 550px)" srcset="imagens/nintendo-p.jpg" type="image/jpg">
                 <img src="imagens/nintendo-g.jpg" alt="Nintendo Switch 2">
@@ -37,7 +41,8 @@
             <h2>Nintendo Lança o Switch 2</h2>
             <p>Novo console vai ser lançado em junho de 2025</p>
         </section>
-        <section>
+
+        <section  class="xbox">
             <picture>
                 <source media="(max-width: 550px)" srcset="imagens/xbox-p.jpg" type="image/jpg">
                 <img src="imagens/xbox-g.jpg" alt="Xbox Game Pass">
