@@ -8,15 +8,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>           
-        <picture class="banner">
-            <source media="(max-width: 550px)" srcset="imagens/banner-p.jpg" type="image/jpg">
-            <img src="imagens/banner-g.jpg" alt="Banner do site Dancox Games">
-        </picture>
+    <header>
+        <h1>Dancox Games</h1>
+        <p>Tudo sobre Consoles e Games em um só lugar</p>
     </header>
     
-    <nav class="menu"> 
-        <p>Dancox Games</p>
+    <nav>   
         <a href="#">Playstation</a>
         <a href="#">Xbox</a>
         <a href="#">Nintendo</a>
@@ -24,32 +21,31 @@
     </nav>
     
     <main>
-        <section  class="playstation">
-            <picture>
-                <source media="(max-width: 550px)" srcset="imagens/psplus-p.jpg" type="image/jpg">
-                <img src="imagens/psplus-g.jpg" alt="PS Plus de maio de 2025">
-            </picture>
-            <h1>Playstation Plus de maio de 2025</h1>
-            <p>Resgate agora os jogos da PS Plus de Maio: ARK: Survival Ascended, Balatro e Warhammer 40.000: Boltgun</p>
-        </section>
+        <div>
+            <section>
+                <img src="imagens/psplus-maio.jpg" alt="">
+                <h1>Playstation Plus de maio de 2025</h1>
+                <p>Resgate agora os jogos da PS Plus de Maio: ARK: Survival Ascended, Balatro e Warhammer 40.000: Boltgun</p>
+            </section>
+        </div><br>
 
-        <section  class="nintendo">
-            <picture>
-                <source media="(max-width: 550px)" srcset="imagens/nintendo-p.jpg" type="image/jpg">
-                <img src="imagens/nintendo-g.jpg" alt="Nintendo Switch 2">
-            </picture>
-            <h2>Nintendo Lança o Switch 2</h2>
-            <p>Novo console vai ser lançado em junho de 2025</p>
-        </section>
+        <div>
+            <section class="console">             
+                <img src="imagens/nintendo-p.jpg" alt="Nintendo Switch 2"><br>
+                <h2 class="nintendo">Nintendo Lança o Switch 2</h2>
+                <img src="imagens/xbox-p.jpg" alt="">  
+                
+                <p>Novo console vai ser lançado em junho de 2025</p>
+            </section>
+        </div>
 
-        <section  class="xbox">
-            <picture>
-                <source media="(max-width: 550px)" srcset="imagens/xbox-p.jpg" type="image/jpg">
-                <img src="imagens/xbox-g.jpg" alt="Xbox Game Pass">
-            </picture>
-            <h2>Jogos Game Pass maio de 2025</h2>
-            <p>Veja os títilos adicionados no mês de maio de 2025</p>
-        </section>
+        <div>
+            <section>
+                <img src="imagens/xbox-p.jpg" alt="Xbox Game Pass">                
+                <h2>Jogos Game Pass maio de 2025</h2>
+                <p>Veja os títilos adicionados no mês de maio de 2025</p>
+            </section>
+        </div>
     </main>
 </body>
 </html>

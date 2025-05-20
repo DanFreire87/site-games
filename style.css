@@ -2,14 +2,28 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+@font-face {
+    font-family: 'Game';
+    src: url(fontes/Game\ Logos.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Playstation';
+    src: url(fontes/zrnic\ rg.otf);
+    font-weight: normal;
+}
+
 :root {
-    --cor0: #0711D2;
-    --cor1: #09F306;
-    --cor2: #07A706;
-    --cor3: #F0CB01;
-    --cor4: #F10306;
+    --cor0: #2B96CD;
+    --cor1: #FF9E2A;
+    --cor2: #EE3232;
+    --cor3: #69D342;
+    --cor4: #FBF795;
 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-game: 'Game', sans-serif;
+    --fonte-playstation: 'Playstation', sans-serif;
 }
 
 * {
@@ -18,38 +32,55 @@
 }
 
 body {
-    background-color: var(--cor3);
+    background-color: var(--cor4);
     font-family: var(--fonte-padrao);
 }
 
 header {
     
+    min-height: 150px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: var(--fonte-playstation);
+    font-size: 6em;
+    padding-top: 20px;
+}
+
+header p {
+    font-family: var(--fonte-playstation);
+    font-size: 1.5em;
+    padding-bottom: 20px;
+
 }
 
 nav {
-    background-color: var(--cor1);
+    background-color: var(--cor0);
     padding: 10px;
     box-shadow: 0 7px 7px rgba(0, 0, 0, 0.400);
+    
 }
 
 nav a {
-    color: var(--cor0);
+    color: var(--cor4);
     text-align: center;
     text-decoration: none;
-    padding: 5px;
+    padding: 30px;
     font-weight: bold;
     border-radius: 5px;
-    transition-duration: 0.5s;
+    transition-duration: 1s;
 }
 
 nav > a:hover{
     background-color: var(--cor3);
     color: var(--cor5);
     padding: 7px;
+    text-decoration: underline;
 }
 
 main{
-    background-color: white;
+    background-color: rgb(240, 240, 240);
     margin: auto;
     margin-bottom: 30px;
     padding: 20px;
@@ -58,10 +89,13 @@ main{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.400);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    
 }
 
-.playstation {
-    background-color: rgb(230, 230, 230);
-    padding-right: 100px;
-    margin-right: -20px;
+.console {
+   text-align: right;
+}
+
+.nintendo {
+    text-align: right;
 }
