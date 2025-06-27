@@ -3,7 +3,7 @@
 :root {
     --cor-ps: #0B44B0;
     --cor-nintendo: #E50012;
-    --cor-xbox: #107C10;
+    --cor-xbox: #107c10;
 }
 
 * {
@@ -45,6 +45,24 @@ nav > a.playstation {
 
 nav > a.nintendo {
     color: var(--cor-nintendo);
+}
+
+a.xbox:hover {
+    background-color: var(--cor-xbox);
+    color: white;
+    padding: 7px;
+}
+
+a.playstation:hover {
+    background-color: var(--cor-ps);
+    color: white;
+    padding: 7px;
+}
+
+a.nintendo:hover {
+    background-color: var(--cor-nintendo);
+    color: white;
+    padding: 7px;
 }
 
 main {
