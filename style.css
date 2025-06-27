@@ -26,10 +26,19 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header > h1 {
-    font-family: var(--fonte-cabeçalho);
+header {
+    min-height: 150px;
     text-align: center;
-    background-image: linear-gradient(to bottom, white, rgb(131, 131, 131));
+    padding-top: 40px;
+}
+
+header > h1 {
+    color: white;
+    font-family: var(--fonte-cabeçalho);
+    font-size: 4em;
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.301);
 }
 
 nav {
