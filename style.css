@@ -11,7 +11,12 @@
     --cor-ps: #0B44B0;
     --cor-nintendo: #E50012;
     --cor-xbox: #107c10;
-
+    --cor1: #403F3D;
+    --cor2: #BFBFBF;
+    --cor3: #F2F2F2;
+    --cor4: #8C8C8C;
+    --cor5: #0D0D0D;
+    
     --fonte-padrao: Arial, Helvetica, sans-serif;
     --fonte-cabeçalho: 'Gamer', sans-serif;
 }
@@ -21,20 +26,22 @@
     padding: 0px;
 }
 
-body {
-    background-color: lightgray;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-header {
-    size: 100vh;
-    min-height: 150px;
+header{
+    width: 100%;    
+    min-height: 350px;
+    background-image: url('imagens/dancox-games-pq.jpg');
+    background-color: rgb(51, 51, 51);
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 nav {
+    background-color: var(--cor2);
     text-align: center;
     padding: 10px;
-    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.315);
+    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.253);
 }
 
 nav > a{
@@ -75,18 +82,25 @@ a.nintendo:hover {
     padding: 7px;
 }
 
+body {
+    min-height: 100vh;
+    background-color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;    
+}
+
 main {
     margin: auto;
     margin-bottom: 30px;
     padding: 20px;
     min-width: 250px;
     max-width: 1000px;
-    background-color: rgb(160, 160, 160);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.178);
+    background-color: rgba(128, 128, 128, 0.452);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.158);
     border-radius: 0 0 10px 10px;
     display: flex;
     justify-content: center;
 }
+
 
 .noticias-container {
     display: flex; /* Ativa o Flexbox */
@@ -101,7 +115,7 @@ main {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.151);
-    overflow: hidden;
+    overflow: hidden;/* Garante que o conteúdo não vaze do card */
     transition: transform 0.2s ease-in-out;
 }
 
@@ -164,10 +178,11 @@ main {
         max-width: 400px;
     }
 
-    .logo {
-        width: 100%;
-        max-width: 650px;
+    header {
+        /* Reduz a altura do cabeçalho em telas menores */
+        min-height: 200px;
+        /* Desativa o efeito parallax em mobile para melhor performance e evitar bugs */
+        background-attachment: scroll;
     }
-   
 }
 
