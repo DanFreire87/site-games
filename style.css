@@ -54,19 +54,18 @@ main {
     min-width: 250px;
     max-width: 1000px;
     background-color: rgb(160, 160, 160);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.400);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.178);
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    justify-content: center;
 }
 
 .noticias-container {
     display: flex; /* Ativa o Flexbox */
     flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha em telas menores */
-    gap: 20px; /* Espaço entre os cards de notícia */
+    gap: 30px; /* Espaço entre os cards de notícia */
     justify-content: center; /* Centraliza os cards dentro do container */
     max-width: 960px; /* Largura máxima para o container, ajuste conforme necessário */
-    width: 100%; /* Garante que ele ocupe o espaço disponível */
-    padding: 0; /* Remove o padding do main que pode interferir no alinhamento */
 }
 
 .noticia-card{
@@ -79,7 +78,7 @@ main {
 }
 
 .noticia-card:hover {
-    transform: translateY(-5px) scale(1.02);
+    transform: translateY(-5px) scale(1.02);/* Efeito de hover para dar destaque ao card */
 }
 
 .noticia-link {
